@@ -1,0 +1,2 @@
+C:\Users\maria\source\repos\High Fidelity Mockups\obj\Debug\High Fidelity Mockups.vbproj.AssemblyReference.cache
+C:\Users\maria\source\repos\High Fidelity Mockups\obj\Debug\High Fidelity Mockups.vbproj.CoreCompileInputs.cache
