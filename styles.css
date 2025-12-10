@@ -358,87 +358,98 @@ footer {
     text-align: center;
     margin-top: 60px;
 }
-/* ============================
-   MOBILE FIXES (max-width: 600px)
-============================ */
-@media (max-width: 600px) {
 
-    /* NAVBAR FIX — shrink height */
-    .navbar {
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-
-    .navbar-brand img {
-        height: 55px; /* smaller logo */
-        margin-top: 4px;
-        margin-bottom: 4px;
-    }
-
-    /* HERO SPACING FIX */
-    #hero-section {
-        padding-top: 160px; /* less than before */
-        padding-bottom: 80px;
-        min-height: 100vh;
-    }
-
-        #hero-section img {
-            width: 150px;
-            height: 150px;
-        }
-
-        #hero-section h1 {
-            font-size: 1rem;
-        }
-
-        #hero-section p {
-            font-size: 1rem;
-        }
-
-    .hero-inner {
-        max-width: 100%;
-        margin: auto;
-    }
-
-
-    /* HEADINGS */
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    h3 {
-        font-size: 1.4rem;
-    }
-
-    /* PROJECT CARDS */
-    .case-card {
-        width: 100%;
-        padding: 15px;
-        margin-bottom: 25px;
-    }
-
-        .case-card h4 {
-            font-size: 1.2rem;
-        }
-
-    /* CONTACT FORM */
-    .contact-form label {
-        font-size: 1rem !important;
-    }
-
-    .contact-form .form-control {
-        font-size: 0.9rem;
-        width: 100%;
-    }
-
-    /* GENERAL SECTION SPACING */
-    section {
-        padding: 40px 15px;
-    }
-}
 /* ================================================
    FIX FOR ANCHOR LINKS HIDING SECTIONS (Mission, Skills, Projects)
 ================================================= */
 section {
-    scroll-margin-top: 480px; /* adjust based on navbar height */
+    scroll-margin-top: 140px; 
+}
+/* ============================================================
+   MEDIA QUERIES FOR RESPONSIVE LAYOUT
+============================================================ */
+
+/* -------------------------------------------
+   1️⃣ MOBILE (iPhone sizes, narrow phones)
+   max-width: 480px
+-------------------------------------------- */
+@media (max-width: 480px) {
+
+    .main-wrapper {
+        padding: 0 20px;
+        padding-top: 140px;
+        padding-bottom: 80px;
+    }
+
+    .navbar-brand img {
+        height: 50px;
+        margin-top: 0;
+    }
+
+    #hero-section {
+        padding-top: 140px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .case-card img {
+        height: auto;
+    }
+}
+
+
+/* -------------------------------------------
+   2️⃣ TABLET PORTRAIT (iPad, 768px)
+   481px – 768px
+-------------------------------------------- */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .main-wrapper {
+        padding: 0 40px;
+        padding-top: 160px;
+        padding-bottom: 100px;
+    }
+
+    .navbar-brand img {
+        height: 80px;
+        margin-top: 10px;
+    }
+
+    #hero-section {
+        padding-top: 180px;
+    }
+
+    .case-card img {
+        height: 350px;
+        object-fit: cover;
+    }
+}
+
+
+/* -------------------------------------------
+   3️⃣ TABLET LANDSCAPE / SMALL LAPTOPS
+   769px – 1024px
+-------------------------------------------- */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .main-wrapper {
+        padding: 0 80px;
+        padding-top: 180px;
+        padding-bottom: 120px;
+    }
+
+    .navbar-brand img {
+        height: 110px;
+    }
+
+    #hero-section {
+        padding-top: 200px;
+    }
+
+    .case-card img {
+        height: 420px;
+        object-fit: cover;
+    }
 }
